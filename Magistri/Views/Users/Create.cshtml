@@ -1,0 +1,30 @@
+﻿@using Magistri.ViewModels
+@{
+    ViewData["Title"] = "Create User";
+}
+
+@model AppUserViewModel
+
+<h1>Create User</h1>
+<a asp-action="Index" class="btn btn-secondary">Back</a>
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<form method="post">
+    <div>
+        <label asp-for="UserName"></label>
+        <input asp-for="UserName" class="form-control" />
+    </div>
+    <div>
+        <label asp-for="Email"></label>
+        <input type="text" asp-for="Email" class="form-control" />
+    </div>
+    <div>
+        <label asp-for="Password"></label>
+        <input type="text" asp-for="Password" class="form-control" />
+    </div>
+    <div>
+        <button type="submit" value="Create" class="btn btn-primary">Create</button>
+    </div>
+</form>
+
+

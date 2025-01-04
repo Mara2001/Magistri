@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Edit";
+}
+@model StudentDTO
+
+<h1>Edit</h1>
+
+<form asp-action="Edit">
+    <div>
+        <label asp-for="FirstName"></label>
+        <input type="text" asp-for="FirstName" class="form-control" />
+    </div>
+    <div>
+        <label asp-for="LastName"></label>
+        <input type="text" asp-for="LastName" class="form-control" />
+    </div>
+    <div>
+        <label asp-for="DateOfBirth"></label>
+        <input type="date" asp-for="DateOfBirth" class="form-control" />
+    </div>
+    <div>
+        <input type="submit" value="Update" class="btn btn-success" />
+    </div>
+</form>
+
+

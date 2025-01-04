@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+@using Magistri.Models
+@model IEnumerable<Grade>
+
+<h1>List of all grades</h1>
+
+@foreach (var item in Model)
+{
+    <div class="border border-1 border-dark p-2 ">
+        <h5>@item.Title @item.Mark</h5>
+        <p>Student: @item.Student.FirstName @item.Student.LastName </p>
+        <p>Subject: @item.Subject.Name</p>
+        <p>Date of Mark: "@item.Date.ToShortDateString()"</p>
+        <a class="btn btn-warning" asp-action="Edit" asp-route-id=@item.Id>Edit</a>
+        <a class="btn btn-danger" asp-action="Delete" asp-route-id=@item.Id>Delete</a>
+    </div>
+}
+<hr />
+<div>
+    <a class="btn btn-success" asp-action="Create">Create</a>
+    <form method="post">
+        <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+</div>
+
+

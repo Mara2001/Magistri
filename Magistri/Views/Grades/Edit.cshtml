@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "Edit";
+}
+@model GradeDTO
+
+<h1>Edit</h1>
+
+<form asp-action="Edit">
+    <div>
+        <label asp-for="StudentId" class="control-label"></label>
+        <select asp-for="StudentId" class= "form-control" asp-items="ViewBag.Students"></select>
+    </div>
+    <div>
+        <label asp-for=SubjectId class="control-label"></label>
+        <select asp-for=SubjectId class="form-control" asp-items="ViewBag.Subjects"></select>
+    </div>
+    <div>
+        <label asp-for="Title"></label>
+        <input type="text" asp-for="Title" class="form-control" />
+    </div>
+    <div>
+        <label asp-for="Mark"></label>
+        <input type="number" asp-for="Mark" class="form-control" />
+    </div>
+    <div>        
+        <input type="hidden" asp-for="@Model.Date"></input>
+    </div>
+    <div>
+        <input type="submit" value="Save" class="btn btn-success" />
+    </div>
+</form>
+
