@@ -1,6 +1,6 @@
-﻿namespace Magistri.DTO
+﻿namespace Magistri.Models
 {
-    public class StudentDto
+    public class StudentDTO
     {
         public int Id { get; set; }
         public string FirstName { get; set; } = string.Empty;

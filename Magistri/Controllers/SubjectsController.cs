@@ -1,4 +1,4 @@
-﻿using Magistri.Models;
+﻿using Magistri.DTO;
 using Magistri.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

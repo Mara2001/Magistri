@@ -1,4 +1,4 @@
-namespace Magistri.Models
+namespace Magistri.ViewModels
 {
     public class ErrorViewModel
     {

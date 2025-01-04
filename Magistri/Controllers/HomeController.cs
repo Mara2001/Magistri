@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Azure.Identity;
 using Magistri.Models;
+using Magistri.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;

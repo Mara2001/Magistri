@@ -1,4 +1,5 @@
-﻿using Magistri.Models;
+﻿using Magistri.DTO;
+using Magistri.Models;
 using Magistri.ViewModels;
 using Microsoft.EntityFrameworkCore;
 

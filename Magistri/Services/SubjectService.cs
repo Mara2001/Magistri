@@ -1,4 +1,5 @@
 ﻿//using Magistri.Migrations;
+using Magistri.DTO;
 using Magistri.Models;
 
 namespace Magistri.Services

@@ -25,7 +25,9 @@ builder.Services.ConfigureApplicationCookie(opts => {
     opts.SlidingExpiration = true;
 });
 
-builder.Services.ConfigureApplicationCookie(opts => { opts.AccessDeniedPath = "/Stop/Index"; });
+builder.Services.ConfigureApplicationCookie(opts => { 
+    opts.AccessDeniedPath = "/Shared/AccessDenied"; 
+});
 
 builder.Services.AddScoped<StudentService>();
 builder.Services.AddScoped<SubjectService>();
